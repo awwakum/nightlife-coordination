@@ -1,0 +1,15 @@
+{
+  "name": "nightlife-coordination",
+  "version": "1.0.0",
+  "description": "Nightlife Coordination App",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "awwakum",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "yelp": "^1.0.1"
+  }
+}

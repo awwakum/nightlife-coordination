@@ -12,8 +12,8 @@ const yelp = new Yelp({
 module.exports = function(req, res) {
 	yelp.search({ term: 'food', location: req.toString(), limit: 5 })
 	.then(function (data) {
-		console.log(req.toString());
-		res.json(data.businesses);
+		console.log(req);
+		res.status(200).json(data.businesses);
 	})
 	.catch(function (err) {
 		console.error(err);
